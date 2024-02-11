@@ -1,0 +1,79 @@
+//@import "bootstrap/scss/bootstrap";//
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.styl {
+height: 1500px;
+  width: 1000px;
+  display: flex;
+  gap: 10px;
+  background-color: grey;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.styl > .styl2 {
+  width: 200px;
+  background-color: red;
+  flex-grow: 1;
+}
+.styl2:first-child {
+flex-basis: 50px;
+}
+.styl2:nth-child(4n){
+    flex-grow: 2;
+}
+.klasa{
+width: 200px;
+height: 200px;
+background-color: chartreuse;
+}
+.klasa:nth-child(2){
+    position: relative;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    background-color: aqua;
+}
+.klasa2{
+    background-color: chocolate;
+}
+.klasa3 {
+    background-color:cornflowerblue;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+.klasa4 {
+    background-color: darkcyan;
+    width: 200px;
+    height: 200px;
+    background-color: darkseagreen;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.klasa6 {
+    background-color: darkslategray;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 999;
+}
+.klasa5 {
+    background-color: darkturquoise;
+    height: 1000px;
+    position: relative;
+    padding-left: 200px;
+}
+.klasa7 {
+    background-color: darkviolet;
+    width: 150px;
+    height: 150px;
+    position: sticky;
+    top: 50px;
+}
